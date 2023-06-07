@@ -1,0 +1,145 @@
+.phase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 430px;
+  height: 259px;
+  margin-right: 24px;
+  
+  overflow: hidden;
+}
+
+@media (min-width: 744px) {
+  .phase {
+    min-width: 490px;
+    height: 295px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .phase {
+    min-width: 605px;
+    height: 364px;
+    margin-right: 20px;
+  }
+}
+
+.phase__content {
+  position: relative;
+  box-sizing: border-box;
+  min-width: 352px;
+  height: 213px;
+  padding: 38px 44px;
+
+  background-color: #FFF1BB;
+}
+
+@media (min-width: 744px) {
+  .phase__content {
+    min-width: 407px;
+    height: 245px;
+    padding: 38px 48px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .phase__content {
+    min-width: 500px;
+    height: 280px;
+    padding: 38px 55px;
+  }
+}
+
+.phase__content::before {
+  content: '';
+
+  position: absolute;
+  top: -30px;
+  left: -30px;
+
+  display: block;
+  min-width: 430px;
+  height: 259px;
+
+  background-image: url('../../images/bambooFrame.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 744px) {
+  .phase__content::before {
+    top: -26px;
+    left: -26px;
+
+    min-width: 490px;
+    height: 295px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .phase__content::before {
+    top: -36px;
+    left: -36px;
+
+    min-width: 605px;
+    height: 364px;
+  }
+}
+
+.phase__title {
+  margin: 0 0 6px;
+
+  font-family: 'Nerko One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  color: #53865D;
+}
+
+@media (min-width: 744px) {
+  .phase__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .phase__title {
+    margin: 0 0 8px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.phase__list {
+  margin: 0;
+}
+
+.phase__item {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+  color: #1C303A;
+}
+
+@media (min-width: 744px) {
+  .phase__item {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .phase__item {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
